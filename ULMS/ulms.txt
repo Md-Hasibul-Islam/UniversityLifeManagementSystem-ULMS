@@ -1,0 +1,52 @@
+1 - Create database, use command
+
+create database ulms;
+
+2 - use the database, you have created
+
+use ulms;
+
+3 - create first table, login
+
+create table login(username varchar(20), password varchar(20));
+
+4 - insert data in login table
+
+insert into login values('admin','admin');
+
+5 - create next table, with name student
+
+create table student(name varchar(20), fathers_name varchar(20), age varchar(5), dob varchar(20), address varchar(30), phone varchar(15), email varchar(25), class_x varchar(10), class_xii varchar(10), nid varchar(15), id varchar(15), course varchar(10), dept varchar(20));
+
+6 - insert some values in the student table using Student Class from the project
+
+insert into student values('Shafi','Shafiul','21','01/01/2000','Dhaka','012','shafi@gmail.com','89','87','12534','1021233','CSE2100','CSE');
+
+7 - create next table, with name teacher
+
+create table teacher(name varchar(20), fathers_name varchar(20), age varchar(5), dob varchar(20), address varchar(30), phone varchar(15), email varchar(25), class_x varchar(10), class_xii varchar(10), nid varchar(15), course varchar(10), tcr_id varchar(15), dept varchar(20));
+
+8 - insert some values in the teacher table using Student Class from the project
+
+insert into teacher values('Shakil','Azizul','29','03/05/1993','Dhaka','015','shakil@gmail.com','98','94','15324','CSE2100','1031235','CSE');
+
+9 - create table fee
+
+create table fee(id varchar(20), name varchar(25), fathers_name varchar(25), course varchar(10), dept varchar(20), semester varchar(10), fee_paid varchar(15));
+
+10 - create next table attendance_student
+
+create table attendance_student(id varchar(20), Date varchar(30), first varchar(10), second varchar(10));
+
+11 - create next table attendance_teacher
+
+create table attendance_teacher(tcr_id varchar(20), Date varchar(30), first varchar(10), second varchar(10));
+
+
+12 - create next table with name subject
+
+create table subject(id varchar(15), subject1 varchar(20), subject2 varchar(20), subject3 varchar(20), subject4 varchar(20), subject5 varchar(20));
+
+13 - create next table with name marks
+
+create table marks(id varchar(15), marks1 varchar(20), marks2 varchar(20), marks3 varchar(20), marks4 varchar(20), marks5 varchar(20));
